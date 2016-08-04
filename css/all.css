@@ -35,12 +35,12 @@ form:hover {
 
 /* Body section*/
 body {
-    background-color: thistle;
     opacity: 0.7;
 }
 
 body.index {
-    background-image: url(../images/background.jpg);
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
     font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
     color: white;
 }
@@ -56,10 +56,8 @@ img {
 /* Greeting box section */
 div.greeting-box {
     width: 470px;
-
     display: block;
     text-align: center;
-
     margin: 0;
     position: absolute;
     top: 50%;
@@ -70,32 +68,34 @@ div.greeting-box {
 p1.greeting-box {
     display: block;
     position: static;
-    margin-right: auto;
+    font: 45px/48px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    font-weight: 700;
+    margin: 5px 0 5px 0;
 }
 
 p2.greeting-box {
     display: block;
+    font: 30px/33px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    margin: 5px 0 5px 0;
 }
 
 p.greeting-box {
     display: block;
+    margin: 5px 0 5px 0;
 }
 
 a#know-more {
     border-radius: 5px;
+    padding: 20px 10px;
+    font: 20px/5px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
     background-color: #000614;
     display: block;
-    padding: 20px;
-    margin: 0px 150px 0px 150px;
-    font-family: Arial;
+    margin: 5px 150px 0 150px;
     color: #ffffff;
-    font-size: 20px;
     text-decoration: none;
 }
 
 a#know-more:hover {
-    border-radius: 5px;
     background-color: #26C17E;
-    display: block;
 }
 
