@@ -61,7 +61,7 @@ div.greeting-box {
     transform: translate(-50%, -50%)
 }
 
-p1.greeting-box {
+h1.greeting-box {
     display: block;
     position: static;
     font: 45px/48px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
@@ -69,7 +69,7 @@ p1.greeting-box {
     margin: 5px 0 5px 0;
 }
 
-p2.greeting-box {
+h2.greeting-box {
     display: block;
     font: 30px/33px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
     margin: 5px 0 5px 0;
