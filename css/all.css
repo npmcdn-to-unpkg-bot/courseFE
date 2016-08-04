@@ -1,0 +1,101 @@
+/* Each section must be commented*/
+article {
+    display: block;
+    background-color: chartreuse;
+    opacity: 0.7;
+}
+
+article:hover {
+    opacity: 1.0;
+}
+
+/* Each section must be commented*/
+nav {
+    display: block;
+    overflow: visible;
+    background-color: azure;
+    opacity: 0.7;
+}
+
+nav:hover {
+    opacity: 1.0;
+}
+
+/* Each section must be commented*/
+form {
+    display: block;
+    overflow: visible;
+    background-color: beige;
+    opacity: 0.7;
+}
+
+form:hover {
+    opacity: 1.0;
+}
+
+/* Body section*/
+body {
+    background-color: thistle;
+    opacity: 0.7;
+}
+
+body.index {
+    background-image: url(../images/background.jpg);
+    font: 14px/1.3em 'open_sansregular', 'Arial', 'Tahoma', sans-serif;
+    color: white;
+}
+
+/* Img section*/
+img {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+/* Greeting box section */
+div.greeting-box {
+    width: 470px;
+
+    display: block;
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+p1.greeting-box {
+    display: block;
+    position: static;
+    margin-right: auto;
+}
+
+p2.greeting-box {
+    display: block;
+}
+
+p.greeting-box {
+    display: block;
+}
+
+a#know-more {
+    border-radius: 5px;
+    background-color: #000614;
+    display: block;
+    padding: 20px;
+    margin: 0px 150px 0px 150px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a#know-more:hover {
+    border-radius: 5px;
+    background-color: #26C17E;
+    display: block;
+}
+
