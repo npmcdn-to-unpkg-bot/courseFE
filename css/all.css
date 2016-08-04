@@ -34,10 +34,6 @@ form:hover {
 }
 
 /* Body section*/
-body {
-    opacity: 0.7;
-}
-
 body.index {
     background: url(../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
