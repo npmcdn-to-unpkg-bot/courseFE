@@ -1,4 +1,10 @@
 /* Body section*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body.index {
     background: url(../images/background.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -72,10 +78,10 @@ a#know-more:hover {
 #sidebar {
     top: 0;
     left: 0;
-    width: 13%;
+    width: 250px;
     background: #222935;
     height: 100%;
-    position: absolute;
+    position: relative;
     text-align: center;
     color: white;
     display: block;
@@ -109,7 +115,7 @@ table.sidebar-table tr:nth-of-type(1) td {
 #go-back {
     font: 20px/33px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
     font-weight: 500;
-    position: inherit;
+    position: absolute;
     bottom: 0;
     left: 30%;
 }
@@ -119,8 +125,18 @@ table.sidebar-table tr:nth-of-type(1) td {
     text-decoration: none;
 }
 
+/*Hide sidebar section*/
 #hide-sidebar {
-    position: relative;
-    display: block;
-    float: right;
+    top: 20px;
+    margin-right: -48px;
+    right: 0;
+    margin-top: 5px;
+    position: absolute;
+    background: #222935;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 14px;
+    box-sizing: border-box;
 }
