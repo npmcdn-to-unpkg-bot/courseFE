@@ -1,38 +1,3 @@
-/* Each section must be commented*/
-article {
-    display: block;
-    background-color: chartreuse;
-    opacity: 0.7;
-}
-
-article:hover {
-    opacity: 1.0;
-}
-
-/* Each section must be commented*/
-nav {
-    display: block;
-    overflow: visible;
-    background-color: azure;
-    opacity: 0.7;
-}
-
-nav:hover {
-    opacity: 1.0;
-}
-
-/* Each section must be commented*/
-form {
-    display: block;
-    overflow: visible;
-    background-color: beige;
-    opacity: 0.7;
-}
-
-form:hover {
-    opacity: 1.0;
-}
-
 /* Body section*/
 body.index {
     background: url(../images/background.jpg) no-repeat center center fixed;
@@ -113,6 +78,7 @@ a#know-more:hover {
     position: absolute;
     text-align: center;
     color: white;
+    display: block;
 }
 
 /*Sidebar table section */
@@ -151,4 +117,10 @@ table.sidebar-table tr:nth-of-type(1) td {
 #go-back a {
     color: white;
     text-decoration: none;
+}
+
+#hide-sidebar {
+    position: relative;
+    display: block;
+    float: right;
 }
