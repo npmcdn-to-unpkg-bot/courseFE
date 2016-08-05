@@ -49,6 +49,14 @@ img {
     border-radius: 50%;
 }
 
+img.sidebar-image {
+    height: 150px;
+    width: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
 /* Greeting box section */
 div.greeting-box {
     width: 470px;
@@ -95,3 +103,52 @@ a#know-more:hover {
     background-color: #26C17E;
 }
 
+/* Sidebar section */
+#sidebar {
+    top: 0;
+    left: 0;
+    width: 13%;
+    background: #222935;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+/*Sidebar table section */
+table.sidebar-table {
+    font: 20px/33px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    color: #667081;
+}
+
+table.sidebar-table tr:hover {
+    color: #26C17E;
+}
+
+table.sidebar-table tr td {
+    border-bottom: 1px dashed #667081;
+    padding: 10px 0;
+    padding-left: 0.5cm;
+}
+
+table.sidebar-table tr:nth-of-type(1) td {
+    border-top: 1px dashed #667081;
+}
+
+/*Go back button*/
+#go-back {
+    font: 20px/33px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    font-weight: 500;
+    position: inherit;
+    bottom: 0;
+    left: 30%;
+}
+
+#go-back a {
+    color: white;
+    text-decoration: none;
+}

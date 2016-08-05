@@ -3,64 +3,48 @@
 <head>
     <title>Title of the document</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
-<nav class="navigation">
-    <!-- Each section must have comment -->
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+<div id="sidebar">
+    <img src="images/avatar.jpg" class="sidebar-image">
+    <h1>Jhon Doe</h1>
+    <table class="sidebar-table">
+        <tr>
+            <td><i class="fa fa-user" aria-hidden="true"></i></td>
+            <td>About me</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-graduation-cap" aria-hidden="true"></i></td>
+            <td>Education</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-pencil" aria-hidden="true"></i></td>
+            <td>Experience</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-diamond" aria-hidden="true"></i></td>
+            <td>Skills</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-suitcase" aria-hidden="true"></i></td>
+            <td>Portfolio</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-location-arrow" aria-hidden="true"></i></td>
+            <td>Contacts</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-comment-o" aria-hidden="true"></i></td>
+            <td>Feedbacks</td>
+        </tr>
+    </table>
+    <p id="go-back">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        <a href="index.html">Go back</a>
+    </p>
 
-<article class="film_review">
-    <!-- Each section must have comment -->
-    <header>
-        <h2>Jurassic Park</h2>
-    </header>
-    <section class="main_review">
-        <p>Dinos were great!</p>
-    </section>
-    <section class="user_reviews">
-        <article class="user_review">
-            <p>Way too scary for me.</p>
-            <footer>
-                <p>
-                    Posted on
-                    <time datetime="2015-05-16 19:00">May 16</time>
-                    by Lisa.
-                </p>
-            </footer>
-        </article>
-        <article class="user_review">
-            <p>I agree, dinos are my favorite.</p>
-            <footer>
-                <p>
-                    Posted on
-                    <time datetime="2015-05-17 19:00">May 17</time>
-                    by Tom.
-                </p>
-            </footer>
-        </article>
-    </section>
-    <footer>
-        <p>
-            Posted on
-            <time datetime="2015-05-15 19:00">May 15</time>
-            by Staff.
-        </p>
-    </footer>
-</article>
-
-
-<form class="form">
-    <!-- Each section must have comment -->
-    Form will be here...
-    <fieldset class="fieldset">Fieldset will be here...</fieldset>
-</form>
-
-The content of the document......
+</div>
 </body>
 </html>
