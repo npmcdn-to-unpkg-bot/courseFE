@@ -81,10 +81,10 @@ a#know-more:hover {
     width: 250px;
     background: #222935;
     height: 100%;
-    position: relative;
+    position: fixed;
     text-align: center;
     color: white;
-    display: block;
+    float: left;
 }
 
 /*Sidebar table section */
@@ -127,7 +127,7 @@ table.sidebar-table tr:nth-of-type(1) td {
 
 /*Hide sidebar section*/
 #hide-sidebar {
-    top: 20px;
+    top: 10px;
     margin-right: -48px;
     right: 0;
     margin-top: 5px;
@@ -139,4 +139,22 @@ table.sidebar-table tr:nth-of-type(1) td {
     font-size: 30px;
     padding: 14px;
     box-sizing: border-box;
+}
+
+/*Content section*/
+.content {
+    margin: 40px;
+    padding-left: 260px;
+    padding-top: 20px;
+}
+
+.headings {
+    font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    color: #26C17E;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+#about-me {
+    margin-bottom: 40px;
 }
