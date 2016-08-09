@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    //Show-hide sidebar section
     $("#hide-sidebar").click(function () {
         var sideBar = $('#sidebar');
         var content = $('.content');
@@ -13,26 +14,15 @@ $(document).ready(function () {
         leftPadding == 260 ? content.animate({'padding-left': '-=' + sideBarWidth + 'px'}) : content.animate({'padding-left': '+=' + sideBarWidth + 'px'});
     });
 
+    // Go up button section
+    $(window).on('scroll', function () {
+        var goUpButton = $('#go-up');
+        $(window).scrollTop() > 100 ? goUpButton.addClass('show') : goUpButton.removeClass('show');
+    });
 
-    if ($('#go-up').length) {
-        var scrollTrigger = 100,
-            backToTop = function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > scrollTrigger) {
-                    $('#go-up').addClass('show');
-                } else {
-                    $('#go-up').removeClass('show');
-                }
-            };
-        backToTop();
-        $(window).on('scroll', function () {
-            backToTop();
-        });
-        $('#go-up').on('click', function () {
-            console.log($('#go-up').length);
-            $('html,body').animate({
-                scrollTop: 0
-            }, 700);
-        });
-    }
+    $('#go-up').on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
 });
