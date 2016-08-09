@@ -12,6 +12,16 @@ body.index {
     color: white;
 }
 
+/*Scrollbar section*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #667081;
+}
+
 /* Img section*/
 img {
     height: 200px;
@@ -163,29 +173,53 @@ table.sidebar-table tr:nth-of-type(1) td {
 .education-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 10px;
+    border-spacing: 0;
 }
 
 .education-table tbody td:nth-child(3) {
     width: 90%;
-    padding: 15px;
-    margin-bottom: 10px;
+    background: #eeeeee;
 
 }
 
 .education-table tbody td:nth-child(3) h1 {
     font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
     font-weight: 900;
+    margin: 0;
+}
+
+.education-table tbody tr:first-child td {
+    background: none;
+}
+
+.education-table tbody tr:first-child td:first-child {
+    border-image: -webkit-linear-gradient(top, white 7%, #26C17E 80%) 0 100% 10 1/0 6px 0 0 stretch
+}
+
+.education-table tbody tr:last-child td:first-child {
+    border-image: -webkit-linear-gradient(bottom, white 7%, #26C17E 80%) 0 100% 10 1/0 6px 0 0 stretch
+}
+
+.cell-title {
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .talk-bubble {
-    padding: 15px;
     background: #eeeeee;
     position: relative;
+    padding: 16px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
+
+td[colspan="2"] {
+    height: 40px;
+    text-align: center;
+}
+
 .talk-bubble:before {
-    content:"";
+    content: "";
     position: absolute;
     right: 100%;
     top: 20px;
@@ -194,4 +228,8 @@ table.sidebar-table tr:nth-of-type(1) td {
     border-top: 13px solid transparent;
     border-right: 15px solid #eeeeee;
     border-bottom: 13px solid transparent;
+}
+
+.rigth-border {
+    border-right: thick solid #26C17E;
 }
