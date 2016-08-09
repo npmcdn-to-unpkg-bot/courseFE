@@ -233,3 +233,20 @@ td[colspan="2"] {
 .rigth-border {
     border-right: thick solid #26C17E;
 }
+
+/*Go up button section*/
+#go-up {
+    padding: 8px 12px 8px;
+    font-size: 15px;
+    color: white;
+    background: #000614;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px 6px 0 0;
+    opacity: 0;
+}
+
+#go-up.show {
+    opacity: 1;
+}
