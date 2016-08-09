@@ -113,12 +113,12 @@ table.sidebar-table tr:hover {
 
 table.sidebar-table tr td {
     border-bottom: 1px dashed #667081;
-    padding: 10px 0;
-    padding-left: 0.5cm;
+    padding: 20px;
 }
 
 table.sidebar-table tr:nth-of-type(1) td {
     border-top: 1px dashed #667081;
+    padding: 20px;
 }
 
 /*Go back button*/
