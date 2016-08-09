@@ -158,3 +158,40 @@ table.sidebar-table tr:nth-of-type(1) td {
 #about-me {
     margin-bottom: 40px;
 }
+
+/*Education table section*/
+.education-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.education-table tbody td:nth-child(3) {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+.education-table tbody td:nth-child(3) h1 {
+    font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    font-weight: 900;
+}
+
+.talk-bubble {
+    padding: 15px;
+    background: #eeeeee;
+    position: relative;
+    border-radius: 5px;
+}
+.talk-bubble:before {
+    content:"";
+    position: absolute;
+    right: 100%;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 15px solid #eeeeee;
+    border-bottom: 13px solid transparent;
+}
