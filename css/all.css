@@ -250,3 +250,27 @@ td[colspan="2"] {
 #go-up.show {
     opacity: 1;
 }
+
+/*Experience table section*/
+.experience-table tr td h1 {
+    font: 16px/19px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
+    font-weight: 900;
+}
+
+.experience-table tr td {
+    vertical-align: top;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px dashed #26C17E;
+}
+
+.experience-table tr:last-child td{
+    border-bottom: none;
+}
+
+.experience-table tr:first-child td{
+    padding-top: 0;
+}
+
+.experience-table tr td h1 {
+    margin: 0 50px 0 0;
+}
