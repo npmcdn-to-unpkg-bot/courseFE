@@ -25,4 +25,10 @@ $(document).ready(function () {
             scrollTop: 0
         }, 700);
     });
-});
+	
+	//Skill bars	
+	$(".skill-bar").each(function(i){
+		var skillBarWidth = Math.floor((Math.random()* 90 + 10)).toString();
+		$(this).animate({'width' : $(this).attr('value') + '%'}, 500);
+	});	
+});	

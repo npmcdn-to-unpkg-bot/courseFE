@@ -162,7 +162,10 @@ table.sidebar-table tr:nth-of-type(1) td {
     font: 25px/28px 'open_sansbold', 'Arial', 'Tahoma', sans-serif;
     color: #26C17E;
     font-weight: 900;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
+}
+.headings:first-child{
+	margin-top: 0;
 }
 
 #about-me {
@@ -273,4 +276,53 @@ td[colspan="2"] {
 
 .experience-table tr td h1 {
     margin: 0 50px 0 0;
+}
+
+/*Skills section*/
+.skill-charts{
+	width:100%;
+}
+
+.skill-bar{
+	height: 30px;
+	list-style-type: none;
+	color: white;
+	width: 0%;
+	background: #26C17E;
+	margin: 5px 0 5px 0;
+
+	/*Text truncation*/
+	white-space: nowrap;      
+	overflow: hidden;         
+	text-overflow: ellipsis; 
+}
+
+.skill-bar span{
+	vertical-align: sub;
+	padding-left: 5px;
+}
+
+.skill-table{
+	margin-top: 30px;
+	width: 100%;
+	border-collapse: collapse;
+}
+.skill-table tr:last-child td{
+    padding-top: 10px;
+}
+
+.skill-table tr:first-child td{
+	position: relative;
+	border: 2px solid grey;
+	border-top: none;
+	height: 10px;
+}
+.skill-table tr:last-child td:last-child{
+	text-align: right;
+}
+.skill-table tr:first-child td:nth-child(2){
+	width: 60%;
+}
+.skill-table span{
+	margin-left: -25px;
 }
