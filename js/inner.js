@@ -30,5 +30,11 @@ $(document).ready(function () {
 	$(".skill-bar").each(function(i){
 		var skillBarWidth = Math.floor((Math.random()* 90 + 10)).toString();
 		$(this).animate({'width' : $(this).attr('value') + '%'}, 500);
+	});
+	
+	//Portfolio
+	$('.grid').isotope({
+	  itemSelector: '.grid-item',
+	  layoutMode: 'fitRows'
 	});	
 });	

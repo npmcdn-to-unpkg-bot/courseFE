@@ -326,3 +326,17 @@ td[colspan="2"] {
 .skill-table span{
 	margin-left: -25px;
 }
+
+/*Portfolio */
+.grid-item { 
+	border: 1px solid black;
+	height: 50px;
+}
+.code {
+	width: 25%;
+	background: red;
+}
+.ui {
+	width: 25%;
+	background: blue;
+}

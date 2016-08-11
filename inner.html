@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <script src="js/inner.js"></script>
 </head>
 <body>
@@ -275,6 +276,17 @@
 		</tr>
 	</table>
 	<h1 class="headings">Portfolio</h1>
+	<button onclick="$('.grid').isotope({ filter: '*' })">All</button>&nbsp;/&nbsp;
+	<button onclick="$('.grid').isotope({ filter: '.code' })">Code</button>&nbsp;/&nbsp;
+	<button onclick="$('.grid').isotope({ filter: '.ui' })">UI</button>
+	<div class="grid">
+	  <div class="grid-item code">ccc</div>
+	  <div class="grid-item ui">bbb</div>
+	  <div class="grid-item ui">ddd</div>
+	  <div class="grid-item code">aaa</div>
+	</div>
+    <h1 class="headings">Contacts</h1>
+    <h1 class="headings">Feedbacks</h1>
 	<div id="go-up"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 </div>
 </body>
