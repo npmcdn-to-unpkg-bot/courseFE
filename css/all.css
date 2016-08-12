@@ -328,15 +328,48 @@ td[colspan="2"] {
 }
 
 /*Portfolio */
+.portfolio-filter{
+	display: inline;
+}
 .grid-item { 
-	border: 1px solid black;
-	height: 50px;
+	border: 1px solid grey;
+	height: 300px;
+	width: 640px;
+    margin: 5px;
+    overflow: hidden;
 }
 .code {
-	width: 25%;
-	background: red;
+	background: url(../images/coder.jpg);
+	background-size: cover; 
 }
 .ui {
-	width: 25%;
-	background: blue;
+	background: url(../images/designer.jpg);
+	background-size: cover; 
+}
+.green{
+	color: #26C17E;
+}
+
+.item-info{
+	position: absolute;
+	width: 636px;
+	height: 296px;
+	opacity: 0.9;
+	top: 300px;
+	background: #222935;
+	border: 2px solid #26C17E;
+}
+.item-info div{
+	margin: 30px;
+}
+
+.item-info h2{
+	color: #26C17E;
+	font-size: 15px;
+	font-weight: 900;
+}
+
+.item-info span{
+	color: white;
+	padding: 10px 0 10px 0;
 }
