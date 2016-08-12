@@ -47,8 +47,6 @@ $(document).ready(function() {
         }, 700);
     });
 
-
-
     //Portfolio
     $('.grid').isotope({
         itemSelector: '.grid-item',
