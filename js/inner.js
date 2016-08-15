@@ -33,7 +33,7 @@ $(document).ready(function() {
 	$('.sidebar-table tr:nth-child(1)').addClass('green');
 		
     //Show-hide sidebar section
-    $("#hide-sidebar").click(function() {
+    $('#hide-sidebar').click(function() {
         var sideBar = $('#sidebar');
         var content = $('.content');
 
@@ -54,6 +54,15 @@ $(document).ready(function() {
             'padding-left': '+=' + sideBarWidth + 'px'
         });
     });
+	
+	$('.sidebar-table tr').each(function() {
+	    $(this).on('click', function() {
+	        $('html,body').animate({
+	                scrollTop: $('h1[value=' + $(this).attr('value') + ']').offset().top
+	            },
+	            'slow');
+	    })
+	});
 	
 
     // Go up button section
