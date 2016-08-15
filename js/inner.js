@@ -29,6 +29,9 @@ var pointSection = function(selector){
 };
 
 $(document).ready(function() {
+	//Init section
+	$('.sidebar-table tr:nth-child(1)').addClass('green');
+		
     //Show-hide sidebar section
     $("#hide-sidebar").click(function() {
         var sideBar = $('#sidebar');
