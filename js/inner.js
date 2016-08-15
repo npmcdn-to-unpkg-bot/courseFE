@@ -5,6 +5,28 @@ var drawSkills = function() {
         }, 500);
     });
 };
+var pointSection = function(selector){
+	var resultList = [];
+	$(selector).each(function(){
+		resultList.push($(this).offset().top);
+	});
+
+	var activePoint = $(window).scrollTop() + 100;
+	resultList.push(activePoint);
+	resultList.sort((a, b) => a - b);
+	
+	var activeIndex = resultList.indexOf(activePoint);
+	$('.sidebar-table tr:nth-child(' + (activeIndex - 1) + ')').removeClass('green');
+	$('.sidebar-table tr:nth-child(' + (activeIndex + 1) + ')').removeClass('green');
+	$('.sidebar-table tr:nth-child(' + activeIndex + ')').addClass('green');
+	
+	if($(window).scrollTop() == document.body.scrollHeight - document.body.clientHeight){
+		$('.sidebar-table tr:nth-child(' + (activeIndex) + ')').removeClass('green');
+		$('.sidebar-table tr:last-child').addClass('green');
+	}
+
+	return resultList.indexOf(activePoint);
+};
 
 $(document).ready(function() {
     //Show-hide sidebar section
@@ -29,6 +51,7 @@ $(document).ready(function() {
             'padding-left': '+=' + sideBarWidth + 'px'
         });
     });
+	
 
     // Go up button section
     $(window).on('scroll', function() {
@@ -39,6 +62,8 @@ $(document).ready(function() {
 		if($(window).scrollTop() > $('.skill-bar:first-child').offset().top - $(window).height() + $('.skill-charts').height()){	
 			drawSkills();
 		}
+			
+		pointSection('.headings');
     });
 
     $('#go-up').on('click', function() {
