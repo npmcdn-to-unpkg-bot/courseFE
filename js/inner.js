@@ -32,7 +32,9 @@ var addSkill = function(){
 	$('input.skill-button').click(function() {
 		var value = $(".add-skill input[type='number']").val();
 		var name = $(".add-skill input[type='text']").val();
-		$('.skill-charts' ).append('<div class="skill-bar" value="' + value + '" style="width:' + value + '%;"><span>' + name + '</span></div>');
+		if(value >= 10 && value <= 100 && /^(?!\s*$).+/gi.test(name)){
+			$('.skill-charts' ).append('<div class="skill-bar" value="' + value + '" style="width:' + value + '%;"><span>' + name + '</span></div>');
+		}
 	});
 	return false;
 };
