@@ -29,7 +29,7 @@ var pointSection = function(selector){
 };
 
 var addSkill = function(){
-	$('input.skill-button').on('click', function() {
+	$('input.skill-button').click(function() {
 		var value = $(".add-skill input[type='number']").val();
 		var name = $(".add-skill input[type='text']").val();
 		$('.skill-charts' ).append('<div class="skill-bar" value="' + value + '" style="width:' + value + '%;"><span>' + name + '</span></div>');
@@ -40,7 +40,7 @@ var addSkill = function(){
 $(document).ready(function() {
 	//Init section
 	$('.sidebar-table tr:nth-child(1)').addClass('green');
-		
+
     //Show-hide sidebar section
     $('#hide-sidebar').click(function() {
         var sideBar = $('#sidebar');
@@ -98,6 +98,8 @@ $(document).ready(function() {
 		$('.add-skill').toggle(150);
 		drawSkills();
 	});
+	
+	$('.add-skill').submit(addSkill());
 
     //Portfolio
     $('.grid').isotope({
