@@ -280,6 +280,22 @@
         </tr>
     </table>
     <h1 class="headings" value="skills">Skills</h1>
+	<button class="skill-button" id="add-skill"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Open edit</button>
+	<form class="add-skill" onsubmit="return addSkill()">
+		<table>
+			<tr>
+				<td>Skill name:</td>
+				<td><input type="text" required="required" pattern="[A-Za-z0-9]{1,20}" name="firstname" placeholder="Enter skill name"></input></td>
+			</tr>
+			<tr>
+				<td>Skill range:</td>
+				<td><input type="number" required="required" min="10" max="100" name="lastname" placeholder="Enter skill range"></input></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Add skill" class="skill-button"></input></td>
+			</tr>
+		</table>
+	</form>
     <div class="skill-charts">
 		<div class="skill-bar" value="90"><span>HTML</span></div>
 		<div class="skill-bar" value="80"><span>CSS</span></div>

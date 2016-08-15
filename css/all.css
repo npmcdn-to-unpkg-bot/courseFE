@@ -137,8 +137,8 @@ table.sidebar-table tr:nth-of-type(1) td {
 
 /*Hide sidebar section*/
 #hide-sidebar {
-    top: 10px;
-    margin-right: -48px;
+    top: 5px;
+    margin-right: -32px;
     right: 0;
     margin-top: 5px;
     position: absolute;
@@ -146,10 +146,11 @@ table.sidebar-table tr:nth-of-type(1) td {
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 30px;
-    padding: 14px;
+    font-size: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
+
 #hide-sidebar:hover{
 	color: #26C17E;
 }
@@ -217,6 +218,7 @@ table.sidebar-table tr:nth-of-type(1) td {
 .cell-title {
     margin: 0;
     padding-bottom: 5px;
+	font-size: 20px;
 }
 
 .talk-bubble {
@@ -290,6 +292,52 @@ td[colspan="2"] {
 }
 
 /*Skills section*/
+.skill-button{
+	color: white;
+	padding: 10px 20px;
+	background: black;
+	border: none;
+	border-radius: 6px;
+}
+
+#add-skill{
+	float: right;
+    margin-top: -80px;
+	opacity: 0;
+}
+
+#add-skill:hover{
+	opacity: 1;
+}
+
+.add-skill{
+	border: 1px solid #26C17E;
+	width: 100%;
+    display: inline-block;
+	border-radius: 5px;
+	display: none;
+}
+
+.add-skill table{
+	width: 100%;
+	margin: 15px;
+}
+
+.add-skill input[type='text'], input[type='number']{
+    color: grey;
+    padding: 7px;
+	margin: 10px;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.add-skill input[type='text']:hover{
+	border-color: #26C17E;
+}
+input:focus{
+    outline: none;
+}
+
 .skill-charts{
 	width:100%;
 }
@@ -344,17 +392,17 @@ td[colspan="2"] {
 }
 .grid-item { 
 	border: 1px solid grey;
-	height: 300px;
-	width: 640px;
+	height: 200px;
+	width: 350px;
     margin: 5px;
     overflow: hidden;
 }
 .code {
-	background: url(../images/coder.jpg);
+	background: url(../images/coder.jpg) no-repeat center center;
 	background-size: cover; 
 }
 .ui {
-	background: url(../images/designer.jpg);
+	background: url(../images/designer.jpg) no-repeat center center;
 	background-size: cover; 
 }
 .green{

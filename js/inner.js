@@ -28,6 +28,15 @@ var pointSection = function(selector){
 	return resultList.indexOf(activePoint);
 };
 
+var addSkill = function(){
+	$('input.skill-button').on('click', function() {
+		var value = $(".add-skill input[type='number']").val();
+		var name = $(".add-skill input[type='text']").val();
+		$('.skill-charts' ).append('<div class="skill-bar" value="' + value + '" style="width:' + value + '%;"><span>' + name + '</span></div>');
+	});
+	return false;
+};
+
 $(document).ready(function() {
 	//Init section
 	$('.sidebar-table tr:nth-child(1)').addClass('green');
@@ -83,6 +92,12 @@ $(document).ready(function() {
             scrollTop: 0
         }, 700);
     });
+	
+	//Skills
+	$('#add-skill').on('click', function(){
+		$('.add-skill').toggle(150);
+		drawSkills();
+	});
 
     //Portfolio
     $('.grid').isotope({
