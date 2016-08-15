@@ -107,6 +107,35 @@ table.sidebar-table {
     color: #667081;
 }
 
+/* Implement with usage of preprocessor. TODO change html markup for go-back button
+.sidebar-table tr td:last-child{
+	display: none;
+}
+#sidebar > div > h1{
+	display: none;
+}
+img.sidebar-image{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+#sidebar{
+	width: inherit;
+}
+#go-back {
+	background: #26C17E;
+	width: 50px;
+	heigth: 50px;
+	border-radius: 5px;
+	left: 10px;
+}
+#go-back > a{
+	display:none;
+}
+.content{
+    padding-left: 70px;
+}*/
+
 table.sidebar-table tr:hover {
     color: white;
 }
