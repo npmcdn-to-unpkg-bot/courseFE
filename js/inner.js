@@ -39,6 +39,14 @@ var addSkill = function() {
     return false;
 };
 
+var tableAppender = function(storageIndex, dbResults){
+	for (i = storageIndex - 5; i < storageIndex; i++) { 
+		$('.education-table').append('<tr> <td colspan="2">' + dbResults.education[i].date + '</td><td rowspan="2">\
+					 <div class="talk-bubble"><h1 class="cell-title">' + dbResults.education[i].title + '</h1> ' + dbResults.education[i].someText + '</div>\
+					 </td></tr><tr><td class="rigth-border"></td><td></td></tr>');  
+	  }
+};
+
 $(document).ready(function() {
     //Init section
     $('.sidebar-table tr:nth-child(1)').addClass('green');
@@ -147,4 +155,26 @@ $(document).ready(function() {
         function() {
             $(this).css('text-decoration', 'none');
         });
+	
+	//Firebase load section
+	var ref = new Firebase("https://coursefe-1d9dc.firebaseio.com");
+	var dbResults = {};
+	var storageIndex = 5;
+
+	ref.on("value", function(snapshot) {
+	  dbResults = snapshot.val();
+	  $('.spinner-wrapper').css('display', 'none');
+	  tableAppender(storageIndex, dbResults)
+	}, function (errorObject) {
+	  console.log("The read failed: " + errorObject.code);
+	});
+	
+	$('.education-table-wrapper').on('scroll', function(){
+		if($(this).scrollTop() == $(this)[0].scrollHeight - 300){
+		  storageIndex += 5;
+		  tableAppender(storageIndex, dbResults);
+		}
+	});
+	
+		
 });
