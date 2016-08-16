@@ -126,17 +126,16 @@ table.sidebar-table
     td
       border-top: 1px dashed raven;
       padding: 20px;
-
+	  
 /*Go back button*/
 #go-back
   font(20px, 33px, 0);
   font-weight: 500;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 30%;
-  a
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  color: white
 
 /*Hide sidebar section*/
 #hide-sidebar
@@ -225,6 +224,7 @@ table.sidebar-table
 }
 
 td[colspan="2"]
+  padding: 0 20px;
   height: 40px;
   text-align: center;
 
@@ -232,7 +232,7 @@ td[colspan="2"]
   content: "";
   position: absolute;
   right: 100%;
-  top: 20px;
+  top: 7px;
   width: 0;
   height: 0;
   border-top: 13px solid transparent;
@@ -351,6 +351,7 @@ input:focus
   margin-top: 30px;
   width: 100%;
   border-collapse: collapse;
+  font-size: 12px;
 
 .skill-table
   tr:last-child
@@ -472,4 +473,41 @@ input:focus
 	width: 50px;
 	height: 50px;
     margin-top: -25px;
+}
+
+/*Mobile layout*/
+@media screen and (max-width: 800px) {
+  .sidebar-table tr td:last-child{
+  	display: none;
+  }
+  
+  #sidebar > div > h1{
+  	display: none;
+  }
+  
+  img.sidebar-image{
+  	width: 50px;
+  	height: 50px;
+  	margin: 10px;
+  }
+  
+  #sidebar{
+  	width: inherit;
+  }
+  
+  #go-back {
+  	background: #26C17E;
+  	width: 50px;
+  	heigth: 50px;
+  	border-radius: 5px;
+  	left: 10px;
+  }
+  
+  #go-back > span{
+  	display:none;
+  }
+  
+  .content{
+      padding-left: 70px;
+  }
 }
